@@ -245,6 +245,7 @@ def plot_with_labels(low_dim_embs, labels, filename):
                  va='bottom')
 
   plt.savefig(filename)
+  plt.show()
 
 try:
   # pylint: disable=g-import-not-at-top
