@@ -37,7 +37,7 @@ def maybe_download(filename, expected_bytes):
   return local_filename
 
 
-filename = maybe_download('text8.zip', 31344016)
+#filename = maybe_download('text8.zip', 31344016)
 
 
 # Read the data into a list of strings.
@@ -47,7 +47,7 @@ def read_data(filename):
     data = tf.compat.as_str(f.read(f.namelist()[0])).split()
   return data
 
-vocabulary = read_data(filename)
+vocabulary = read_data('text8.zip')
 print('Data size', len(vocabulary))
 
 # Step 2: Build the dictionary and replace rare words with UNK token.
